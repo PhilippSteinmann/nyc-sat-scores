@@ -66,8 +66,7 @@ function addMarker(map, school_name, lat, long, percentile, reading, math, writi
                     "</div>"
 
     var infowindow = new google.maps.InfoWindow( {
-        content: contentString,
-        disableAutoPan: true
+        content: contentString
     } );
 
     infowindows[school_name] = [infowindow, marker]
@@ -101,22 +100,20 @@ function()
         }
     } );
     
-    $("#content").click(
-    function()
-    {
-        if (currently_open_infowindow)
-            currently_open_infowindow.setMap(null); // close currently open infoWindow
-    } );
-
-    $(".sat-table tr").hover(
+    $(".sat-table tr").click(
     function()
     {
         var name = $(this).data("name");
-        infowindow = infowindows[name][0];
-        marker = infowindows[name][1];
+        var infowindow = infowindows[name][0];
+        var marker = infowindows[name][1];
+
+        console.log(infowindow);
+        console.log(marker);
+        console.log(map);
 
         if (currently_open_infowindow)
             currently_open_infowindow.setMap(null); // close currently open infoWindow
+
         infowindow.open(map, marker);
         currently_open_infowindow = infowindow;
     } );

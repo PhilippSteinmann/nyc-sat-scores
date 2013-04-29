@@ -92,6 +92,12 @@ button:active
     display: none;
 }
 
+.sat-table tr:hover
+{
+    cursor: pointer;
+    color: rgb(190, 20, 30);
+}
+
 table
 {
     border-collapse: collapse;
