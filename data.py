@@ -11,14 +11,14 @@ print """
 <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <title>SAT Scores around NYC</title>
-    <link rel="stylesheet" href="data01_style.css">
+    <link rel="stylesheet" href="style.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,900,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="highlight.js/styles/vs.css">
     
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALc9l8tOL3WZiGQ1Av3CsLsJdZyt477KA&sensor=false"> </script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <script src="data01_script.js"> </script>
+    <script src="script.js"> </script>
     <script type="text/javascript">
         coordinates = new google.maps.LatLng(40.701646, -73.952);
         function initialize() {
