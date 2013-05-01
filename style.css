@@ -1,0 +1,181 @@
+html, body
+{
+    font: 16px/1.5 "Lato", sans-serif;
+    height: 100%; 
+    margin: 0; 
+    padding: 0 
+}
+
+::selection
+{
+    background: rgba(180, 0, 0, 0.999);
+    color: white;
+}
+
+#map-canvas
+{
+    width: 50%;
+    height: 100%;
+    margin-right: 1%;
+}
+
+#content
+{
+    position: absolute;
+    left: 51%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+h1
+{
+    margin: 0 0 28px 0;
+    padding-top: 10px;
+    font-weight: 900;
+    font-size: 36px;
+}
+
+h2
+{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.sat-table-container + h2
+{
+    margin-top: 56px;
+}
+
+p, button
+{
+    line-height: 1.75;
+    margin: 0 0 14px 0;
+}
+
+button
+{
+    color: white;
+    border: none;
+    font: bold 16px "Lato", sans-serif;
+    padding: 8px 48px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    display: block;
+
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    background: rgb(20, 150, 200);
+    transition: background 0.3s;
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+}
+
+button:hover
+{
+    cursor: pointer;
+    background: rgb(0, 100, 150);
+}
+
+button:active
+{
+    -webkit-box-shadow: rgba(0, 0, 0, 0.14902) 0px 20px 40px 0px inset, rgba(0, 0, 0, 0.1470588) 0px 2px 4px 0px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.14902) 0px 20px 40px 0px inset, rgba(0, 0, 0, 0.1470588) 0px 2px 4px 0px;
+    box-shadow: rgba(0, 0, 0, 0.14902) 0px 20px 40px 0px inset, rgba(0, 0, 0, 0.1470588) 0px 2px 4px 0px;
+    background: rgb(0, 100, 150);
+}
+
+.sat-table tbody
+{
+    overflow: auto;
+}
+
+.sat-head
+{
+    width: 96%;
+    display: none;
+}
+
+.sat-table tr:hover
+{
+    cursor: pointer;
+    color: rgb(190, 20, 30);
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+th
+{
+    background: rgb(0, 100, 150);
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+tr
+{
+    border-bottom: 1px solid rgb(170, 210, 215);
+}
+
+tr:nth-child(odd)
+{
+    background: rgb(210, 240, 255);
+}
+
+th, td
+{
+    width: 25%;
+    text-align: center;
+    padding: 6px 10px;
+}
+
+.infowindow h3
+{
+    margin: 0;
+}
+
+.infowindow p
+{
+    margin-top: 7px;
+    margin-bottom: 14px;
+}
+
+.infowindow table
+{
+    width: auto;
+}
+
+.infowindow td
+{
+    width: 100px;
+}
+
+.little-container
+{
+    display: none;
+    max-height: 400px;
+    width: 96%;
+    overflow: auto;
+    margin-bottom: 28px;
+}
+
+.source-container
+{
+    word-wrap: break-word;
+}
+
+code, pre
+{
+    margin-top: 0;
+    padding-top: 0;
+    font-family: "Ubuntu Mono", monospace;
+}
+
+.toggle-source
+{
+    margin-bottom: 0;
+}
