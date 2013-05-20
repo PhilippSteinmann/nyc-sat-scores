@@ -1,0 +1,70 @@
+html, body
+{ 
+    height: 100%; 
+    margin: 0; 
+    padding: 0;
+
+    font: 16px/1.5 "Lato", sans-serif;
+}
+
+#map-canvas 
+{ 
+    height: 100%;
+}
+
+::selection
+{
+    background: rgba(180, 0, 0, 0.999);
+    color: white;
+}
+
+.infowindow h3
+{
+    margin: 0;
+}
+
+.infowindow p
+{
+    margin-top: 7px;
+    margin-bottom: 14px;
+}
+
+.infowindow table
+{
+    width: auto;
+}
+
+.infowindow td
+{
+    width: 100px;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+th
+{
+    background: rgb(0, 100, 150);
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+tr
+{
+    border-bottom: 1px solid rgb(170, 210, 215);
+}
+
+tr:nth-child(odd)
+{
+    background: rgb(210, 240, 255);
+}
+
+th, td
+{
+    width: 25%;
+    text-align: center;
+    padding: 6px 10px;
+}

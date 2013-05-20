@@ -25,8 +25,7 @@ print """
             var mapOptions = {
                 zoom: 11,
                 center: coordinates,
-                streetViewControl: false, 
-                mapTypeControl: false,
+                streetViewControl: false, mapTypeControl: false,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             }
             map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
@@ -37,7 +36,7 @@ def valid_data(name, reading, math, writing):
 schools = []
 school_locations = {}
 
-school_locations_file = open("schools_data.csv") 
+school_locations_file = open("locations_data.csv") 
 for line in school_locations_file:
     name, lat, lon = line.split(",")
     school_locations[name] = {}
@@ -126,7 +125,7 @@ print """
         
             <pre class="little-container">
                 <code>"""
-this_file = open("data01.py")
+this_file = open("data.py")
 file_contents = this_file.read()
 escaped_contents = file_contents.replace("<", "&lt;")
 print escaped_contents
